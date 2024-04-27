@@ -8,17 +8,17 @@ Just a simple ELO calculator for poker games between you and your friends.
 
 The main formula used is:
 
-\\\
-Rnew = Rold + K(S - E)
-\\\
 
-- \`K\` is the scalar. For this, it's kept at 100.
-- \`S\` is the score outcome of each game.
-- \`E\` is their expected win percentage, taking their ELO into account.
+Rnew = Rold + K(S - E)
+
+
+- K is the scalar. For this, it's kept at 100.
+- S is the score outcome of each game.
+- \E is their expected win percentage, taking their ELO into account.
 
 ## Scoring System
 
-The score \`S\` is calculated by getting the number of players, floor dividing it by 2, and anyone who has a position below that number gets a score of \`1/N\`, where \`N\` is their position.
+The score S is calculated by getting the number of players, floor dividing it by 2, and anyone who has a position below that number gets a score of \`1/N\`, where \`N\` is their position.
 
 **Example:** If the player count is 7, \`7 // 2\` is 3. Anyone with a score of 1, 2, or 3 gets a score of \`1/1\`, \`1/2\`, or \`1/3\`, respectively.
 
