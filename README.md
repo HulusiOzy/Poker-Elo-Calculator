@@ -8,9 +8,9 @@ Just a simple ELO calculator for poker games between you and your friends.
 
 The main formula used is:
 
-\`\`\`
+\\\
 Rnew = Rold + K(S - E)
-\`\`\`
+\\\
 
 - \`K\` is the scalar. For this, it's kept at 100.
 - \`S\` is the score outcome of each game.
